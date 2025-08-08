@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & Meta Tags -->
+    <title>Guía Definitiva para Cancelar Deudas de Tarjetas Revolving en España (2025)</title>
+    <meta name="description" content="Herramienta completa y guía paso a paso para anular contratos de tarjetas revolving en España por usura o falta de transparencia, con base en la jurisprudencia del Tribunal Supremo. Incluye un asistente IA para resolver tus dudas.">
+    <meta name="keywords" content="tarjeta revolving, usura, falta de transparencia, anular contrato, reclamar intereses, deuda infinita, Tribunal Supremo, España, Gemini AI">
+    <meta name="author" content="apwebai">
+    <link rel="canonical" href="https://tu-dominio.es/">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="./assets/images/logos/logo-apwebai-transparente.png">
+    <link rel="apple-touch-icon" href="./assets/images/logos/logo-apwebai-transparente.png">
+
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom Styles & Tailwind Config -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+        }
+        /* Custom scrollbar for a better look */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 8px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #e9ecef;
+            border-radius: 10px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #adb5bd;
+            border-radius: 10px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #6c757d;
+        }
+        /* Animation for chat window */
+        @keyframes slideInUp {
+            from { transform: translateY(100%); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .chat-window-visible {
+            animation: slideInUp 0.3s ease-out forwards;
+        }
+        /* Active Nav Link */
+        .nav-link.active {
+            background-color: #e9d8a6;
+            color: #001219;
+        }
+        /* Callout styles */
+        .callout {
+            border-left-width: 4px;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            background-color: #ffffff;
+        }
+        .callout-info { border-color: #0a9396; }
+        .callout-warn { border-color: #fca311; }
+        .callout-danger { border-color: #ae2012; }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            primary: '#005f73',
+                            secondary: '#0a9396',
+                            accent: '#94d2bd',
+                            light: '#e9d8a6',
+                            dark: '#001219',
+                            danger: '#ae2012',
+                            success: '#2a9d8f'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="text-brand-dark antialiased">
+
+    <!-- Header -->
+    <header id="header" class="bg-white/80 backdrop-blur-lg sticky top-0 z-40 shadow-sm">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center">
+                    <a href="#" class="flex-shrink-0">
+                        <img src="./assets/images/logos/logo-apwebai-transparente.png" alt="Logo de apwebai" class="h-20 w-auto" onerror="this.onerror=null; this.src='https://placehold.co/300x80/001219/FFFFFF?text=apwebai';">
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <nav id="desktop-nav" class="flex items-center space-x-1">
+                        <a href="#resumen" class="nav-link text-gray-600 hover:text-brand-primary px-3 py-2 rounded-md text-sm font-medium">Resumen</a>
+                        <a href="#que-es" class="nav-link text-gray-600 hover:text-brand-primary px-3 py-2 rounded-md text-sm font-medium">¿Qué es?</a>
+                        <a href="#marco-legal" class="nav-link text-gray-600 hover:text-brand-primary px-3 py-2 rounded-md text-sm font-medium">Marco Legal</a>
+                        <a href="#proceso" class="nav-link text-gray-600 hover:text-brand-primary px-3 py-2 rounded-md text-sm font-medium">Paso a Paso</a>
+                        <a href="#riesgos" class="nav-link text-gray-600 hover:text-brand-primary px-3 py-2 rounded-md text-sm font-medium">Riesgos y Costes</a>
+                        <a href="#anexos" class="nav-link text-gray-600 hover:text-brand-primary px-3 py-2 rounded-md text-sm font-medium">Anexos</a>
+                        <a href="#fuentes" class="nav-link text-gray-600 hover:text-brand-primary px-3 py-2 rounded-md text-sm font-medium">Fuentes</a>
+                    </nav>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-brand-primary hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-brand-primary">
+                        <span class="sr-only">Abrir menú principal</span>
+                        <i data-lucide="menu" class="h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                 <a href="#resumen" class="nav-link text-gray-600 hover:text-brand-primary block px-3 py-2 rounded-md text-base font-medium">Resumen</a>
+                 <a href="#que-es" class="nav-link text-gray-600 hover:text-brand-primary block px-3 py-2 rounded-md text-base font-medium">¿Qué es?</a>
+                 <a href="#marco-legal" class="nav-link text-gray-600 hover:text-brand-primary block px-3 py-2 rounded-md text-base font-medium">Marco Legal</a>
+                 <a href="#proceso" class="nav-link text-gray-600 hover:text-brand-primary block px-3 py-2 rounded-md text-base font-medium">Paso a Paso</a>
+                 <a href="#riesgos" class="nav-link text-gray-600 hover:text-brand-primary block px-3 py-2 rounded-md text-base font-medium">Riesgos y Costes</a>
+                 <a href="#anexos" class="nav-link text-gray-600 hover:text-brand-primary block px-3 py-2 rounded-md text-base font-medium">Anexos</a>
+                 <a href="#fuentes" class="nav-link text-gray-600 hover:text-brand-primary block px-3 py-2 rounded-md text-base font-medium">Fuentes</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-white pt-20 pb-16 sm:pt-24 sm:pb-20 lg:pt-32 lg:pb-28">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-brand-dark tracking-tight">
+                    Recupera el control de tu dinero.
+                </h1>
+                <p class="mt-6 max-w-2xl mx-auto text-lg sm:text-xl text-gray-600">
+                    La guía definitiva para entender y cancelar las deudas de tarjetas revolving en España, basada en la ley y las sentencias del Tribunal Supremo.
+                </p>
+                <div class="mt-10">
+                    <a href="#resumen" class="inline-block bg-brand-primary text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-brand-secondary transition-colors duration-300">
+                        Empezar a informarme
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resumen Ejecutivo -->
+        <section id="resumen" class="py-16 sm:py-20 bg-gray-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-brand-dark">Resumen Ejecutivo</h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">Los puntos clave que necesitas saber para empezar.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                    <div class="callout callout-info">
+                        <h3 class="font-bold text-xl text-brand-primary flex items-center mb-2"><i data-lucide="award" class="w-6 h-6 mr-2"></i>Qué puedes conseguir</h3>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700">
+                            <li>Anular el contrato (usura o transparencia).</li>
+                            <li>Recuperar intereses, comisiones y seguros.</li>
+                            <li>Frenar el devengo de futuros intereses.</li>
+                            <li>Alternativa: Ley de Segunda Oportunidad.</li>
+                        </ul>
+                    </div>
+                    <div class="callout callout-warn">
+                        <h3 class="font-bold text-xl text-yellow-700 flex items-center mb-2"><i data-lucide="help-circle" class="w-6 h-6 mr-2"></i>Cuándo tienes opciones</h3>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700">
+                            <li>Si la TAE es muy superior a la media del mercado en su fecha.</li>
+                            <li>Si no te informaron con claridad del coste y funcionamiento real.</li>
+                        </ul>
+                    </div>
+                    <div class="callout callout-success">
+                        <h3 class="font-bold text-xl text-green-700 flex items-center mb-2"><i data-lucide="list-checks" class="w-6 h-6 mr-2"></i>Cómo actuar</h3>
+                        <ol class="list-decimal list-inside space-y-1 text-gray-700">
+                            <li>Recopilar toda la documentación.</li>
+                            <li>Reclamar formalmente a la entidad (SAC).</li>
+                            <li>(Opcional) Escalar al Banco de España.</li>
+                            <li>Presentar demanda judicial si no hay acuerdo.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: ¿Qué es una tarjeta revolving? -->
+        <section id="que-es" class="py-16 sm:py-20 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-brand-dark">La "Deuda Infinita": ¿Qué es una Tarjeta Revolving?</h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">Es un tipo de crédito que se renueva automáticamente. Su trampa reside en cuotas mensuales bajas que apenas cubren los intereses, alargando la deuda durante años.</p>
+                </div>
+                <div class="max-w-4xl mx-auto bg-gray-50 p-8 rounded-xl shadow-lg border border-gray-200 flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/3 text-center mb-6 md:mb-0">
+                        <i data-lucide="trending-down" class="w-24 h-24 text-brand-danger mx-auto"></i>
+                    </div>
+                    <div class="md:w-2/3 md:pl-8">
+                        <h3 class="text-2xl font-semibold text-brand-dark mb-4">El Mecanismo Perverso</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <i data-lucide="alert-triangle" class="w-5 h-5 mr-3 text-yellow-500 mt-1 flex-shrink-0"></i>
+                                <span><strong class="font-semibold">Cuota Fija Engañosa:</strong> Pagas una cantidad fija, pero la mayor parte se va en intereses, no en reducir lo que debes.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="alert-triangle" class="w-5 h-5 mr-3 text-yellow-500 mt-1 flex-shrink-0"></i>
+                                <span><strong class="font-semibold">Intereses sobre Intereses:</strong> Los intereses no pagados se suman al capital, generando nuevos intereses (anatocismo).</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="alert-triangle" class="w-5 h-5 mr-3 text-yellow-500 mt-1 flex-shrink-0"></i>
+                                <span><strong class="font-semibold">TAE Elevadísima:</strong> Suelen tener una Tasa Anual Equivalente (TAE) muy superior a la media del mercado.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Marco Legal -->
+        <section id="marco-legal" class="py-16 sm:py-20 bg-gray-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-brand-dark">Tus Armas Legales: Usura y Transparencia</h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">La ley y el Tribunal Supremo te ofrecen argumentos sólidos para reclamar la nulidad de tu contrato.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <!-- Card Usura -->
+                    <div class="bg-white p-8 rounded-xl shadow-md border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex items-center mb-4">
+                            <i data-lucide="gavel" class="w-10 h-10 text-brand-primary"></i>
+                            <h3 class="ml-4 text-2xl font-bold text-brand-dark">1. Usura (Ley de 1908)</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Un contrato es nulo por usurario si el interés es "notablemente superior al normal del dinero".</p>
+                        <div class="bg-gray-50 p-4 rounded-lg border border-brand-accent">
+                            <p class="font-semibold text-brand-dark">Criterio del Tribunal Supremo (STS 258/2023):</p>
+                            <p class="text-gray-700 mt-2">Se considera usura si la <strong class="text-brand-danger">TAE de tu contrato supera en 6 puntos porcentuales</strong> al tipo de interés medio de las tarjetas de crédito y revolving en la fecha en que lo firmaste.</p>
+                        </div>
+                        <div class="mt-6">
+                            <p class="font-semibold text-brand-success">Consecuencia principal:</p>
+                            <p class="text-gray-700 mt-1">Solo tienes que devolver el capital que te prestaron. La entidad debe restituirte todos los intereses, comisiones y seguros pagados.</p>
+                        </div>
+                    </div>
+                    <!-- Card Falta de Transparencia -->
+                    <div class="bg-white p-8 rounded-xl shadow-md border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex items-center mb-4">
+                            <i data-lucide="file-warning" class="w-10 h-10 text-brand-primary"></i>
+                            <h3 class="ml-4 text-2xl font-bold text-brand-dark">2. Falta de Transparencia</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Incluso si no es usura, el contrato puede ser nulo si la entidad no cumplió con su deber de informar de forma clara y comprensible.</p>
+                         <div class="bg-gray-50 p-4 rounded-lg border border-brand-accent">
+                            <p class="font-semibold text-brand-dark">Motivos comunes:</p>
+                            <ul class="list-disc list-inside mt-2 text-gray-700 space-y-1">
+                                <li>Letra del contrato ilegible (demasiado pequeña).</li>
+                                <li>No se entregaron simulaciones de cómo evolucionaría la deuda.</li>
+                                <li>No se explicó claramente el riesgo del "efecto bola de nieve".</li>
+                                <li>Publicidad engañosa o que omite información clave.</li>
+                            </ul>
+                        </div>
+                        <div class="mt-6">
+                            <p class="font-semibold text-brand-success">Consecuencia principal:</p>
+                            <p class="text-gray-700 mt-1">Nulidad de la cláusula de intereses. El consumidor se convierte en un "deudor cautivo" y se puede anular el contrato o sus cláusulas abusivas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Proceso Paso a Paso -->
+        <section id="proceso" class="py-16 sm:py-20 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-brand-dark">Tu Hoja de Ruta para Reclamar</h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">Sigue estos pasos de forma ordenada para maximizar tus probabilidades de éxito.</p>
+                </div>
+                <div class="relative max-w-2xl mx-auto">
+                    <!-- Vertical line -->
+                    <div class="absolute left-1/2 transform -translate-x-1/2 md:left-6 h-full border-l-2 border-brand-accent border-dashed"></div>
+                    
+                    <div class="space-y-12">
+                        <!-- Step 1 -->
+                        <div class="relative flex items-start md:space-x-6">
+                            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-brand-primary text-white flex items-center justify-center z-10 font-bold text-lg">1</div>
+                            <div class="bg-gray-50 p-6 rounded-lg shadow-md flex-1 ml-4 md:ml-0">
+                                <h3 class="text-xl font-bold">Recopilar Documentación</h3>
+                                <p class="mt-2 text-gray-600">Reúne el contrato, todos los extractos mensuales y cualquier comunicación con la entidad. Si no los tienes, la entidad está obligada a dártelos.</p>
+                            </div>
+                        </div>
+                        <!-- Step 2 -->
+                        <div class="relative flex items-start md:space-x-6">
+                            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-brand-primary text-white flex items-center justify-center z-10 font-bold text-lg">2</div>
+                            <div class="bg-gray-50 p-6 rounded-lg shadow-md flex-1 ml-4 md:ml-0">
+                                <h3 class="text-xl font-bold">Reclamación Extrajudicial</h3>
+                                <p class="mt-2 text-gray-600">Envía una reclamación formal al Servicio de Atención al Cliente (SAC) de tu banco. Hazlo por un medio fehaciente (burofax). Este paso es obligatorio antes de ir a juicio.</p>
+                            </div>
+                        </div>
+                        <!-- Step 3 -->
+                        <div class="relative flex items-start md:space-x-6">
+                           <div class="flex-shrink-0 w-12 h-12 rounded-full bg-brand-primary text-white flex items-center justify-center z-10 font-bold text-lg">3</div>
+                            <div class="bg-gray-50 p-6 rounded-lg shadow-md flex-1 ml-4 md:ml-0">
+                                <h3 class="text-xl font-bold">Demanda Judicial</h3>
+                                <p class="mt-2 text-gray-600">Si la entidad no responde o su respuesta es negativa, el siguiente paso es presentar una demanda en el juzgado. Necesitarás abogado y procurador.</p>
+                            </div>
+                        </div>
+                        <!-- Step 4 -->
+                        <div class="relative flex items-start md:space-x-6">
+                            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-brand-primary text-white flex items-center justify-center z-10 font-bold text-lg">4</div>
+                            <div class="bg-gray-50 p-6 rounded-lg shadow-md flex-1 ml-4 md:ml-0">
+                                <h3 class="text-xl font-bold">Sentencia y Liquidación</h3>
+                                <p class="mt-2 text-gray-600">Si ganas el juicio, el juez declarará nulo el contrato y la entidad tendrá que devolverte el dinero pagado de más (intereses, comisiones, etc.).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Riesgos y Costes -->
+        <section id="riesgos" class="py-16 sm:py-20 bg-gray-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-brand-dark">Riesgos, Plazos y Costes</h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">Una valoración honesta para que tomes una decisión informada.</p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <!-- Riesgos -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold text-brand-danger flex items-center mb-4"><i data-lucide="alert-circle" class="w-6 h-6 mr-2"></i>Riesgos y Mitigaciones</h3>
+                        <ul class="space-y-3 text-gray-700">
+                             <li><strong class="font-semibold">Condena en costas:</strong> Si pierdes, podrías pagar los gastos del contrario, pero la ley los limita a 1/3 de lo reclamado.</li>
+                             <li><strong class="font-semibold">Ficheros de morosos (ASNEF):</strong> Es ilegal incluirte por una deuda en litigio.</li>
+                             <li><strong class="font-semibold">Justicia Gratuita:</strong> Si cumples los requisitos (familias numerosas tienen umbrales más altos), el riesgo económico es CERO.</li>
+                        </ul>
+                    </div>
+                     <!-- Plazos -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold text-brand-primary flex items-center mb-4"><i data-lucide="calendar-clock" class="w-6 h-6 mr-2"></i>Plazos Importantes</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li><strong class="font-semibold">Nulidad por usura:</strong> Es imprescriptible, puedes reclamar en cualquier momento.</li>
+                            <li><strong class="font-semibold">Devolución de dinero:</strong> Prescribe a los 5 años, pero el plazo se interrumpe al enviar la reclamación extrajudicial.</li>
+                            <li class="callout callout-warn mt-4">¡Actúa cuanto antes para no perder el derecho a recuperar tu dinero!</li>
+                        </ul>
+                    </div>
+                     <!-- Costes -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold text-brand-success flex items-center mb-4"><i data-lucide="coins" class="w-6 h-6 mr-2"></i>Costes Orientativos</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li><strong class="font-semibold">Con abogado:</strong> Muchos trabajan a éxito (cobran un % de lo recuperado, 15-25%).</li>
+                            <li><strong class="font-semibold">Perito:</strong> Un informe pericial de cálculo es clave y cuesta entre 200€ y 500€.</li>
+                             <li><strong class="font-semibold">Por tu cuenta:</strong> No recomendable por la complejidad técnica.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Anexos -->
+        <section id="anexos" class="py-16 sm:py-20 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-brand-dark">Anexos Operativos</h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">Herramientas prácticas para que empieces tu reclamación.</p>
+                </div>
+                <div class="max-w-4xl mx-auto space-y-8">
+                    <!-- Anexo A -->
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold text-brand-primary mb-4">A. Tabla de Inventario de Tarjetas (Rellenable)</h3>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-sm text-left text-gray-500">
+                                <thead class="text-xs text-gray-700 uppercase bg-gray-200">
+                                    <tr>
+                                        <th scope="col" class="px-6 py-3">Entidad</th>
+                                        <th scope="col" class="px-6 py-3">Nº Contrato</th>
+                                        <th scope="col" class="px-6 py-3">Fecha Alta</th>
+                                        <th scope="col" class="px-6 py-3">TAE (%)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="bg-white border-b">
+                                        <td class="px-6 py-4" contenteditable="true"></td>
+                                        <td class="px-6 py-4" contenteditable="true"></td>
+                                        <td class="px-6 py-4" contenteditable="true"></td>
+                                        <td class="px-6 py-4" contenteditable="true"></td>
+                                    </tr>
+                                     <tr class="bg-white border-b">
+                                        <td class="px-6 py-4" contenteditable="true"></td>
+                                        <td class="px-6 py-4" contenteditable="true"></td>
+                                        <td class="px-6 py-4" contenteditable="true"></td>
+                                        <td class="px-6 py-4" contenteditable="true"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- Anexo B -->
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                         <h3 class="text-xl font-bold text-brand-primary mb-4">B. Modelo de Reclamación Extrajudicial (Editable)</h3>
+                         <div class="bg-white p-4 border rounded-md font-mono text-sm text-gray-800" contenteditable="true">
+                            <p>A LA ATENCIÓN DEL SERVICIO DE ATENCIÓN AL CLIENTE DE [ENTIDAD BANCARIA]</p>
+                            <br>
+                            <p>D./D.ª [TU NOMBRE COMPLETO], con DNI [TU DNI], y domicilio a efectos de notificaciones en [TU DIRECCIÓN COMPLETA].</p>
+                            <br>
+                            <p><strong>EXPONE:</strong></p>
+                            <p>Que soy titular del contrato de tarjeta de crédito revolving nº [NÚMERO DE CONTRATO O DE TARJETA], suscrito con su entidad en fecha [FECHA DE CONTRATACIÓN].</p>
+                            <p>Que dicho contrato estipula un interés remuneratorio (TAE) del [XX,XX]%, tipo que es notablemente superior al normal del dinero y manifiestamente desproporcionado, incurriendo en usura según la Ley de 23 de julio de 1908 y la jurisprudencia del Tribunal Supremo (STS 258/2023).</p>
+                            <p>Adicionalmente y de forma subsidiaria, se alega la nulidad del contrato por falta de transparencia, al no habérseme informado de manera clara y comprensible sobre la carga económica y jurídica del mismo.</p>
+                            <br>
+                            <p><strong>SOLICITA:</strong></p>
+                            <ol class="list-decimal list-inside ml-4">
+                                <li>Que se declare la <strong>NULIDAD</strong> del contrato de préstamo por los motivos expuestos.</li>
+                                <li>Que se proceda a realizar la liquidación del contrato, devolviéndome todas las cantidades abonadas que excedan del capital efectivamente dispuesto, incluyendo intereses, comisiones y primas de seguro, más los intereses legales correspondientes.</li>
+                                <li>Que se me remita copia íntegra del contrato y el cuadro de liquidación completo desde el inicio.</li>
+                            </ol>
+                            <br>
+                            <p>Se les concede un plazo de 30 días para atender a esta solicitud. En caso de no recibir una respuesta satisfactoria, iniciaré las acciones legales oportunas.</p>
+                            <br>
+                            <p>En [TU CIUDAD], a [FECHA DE HOY].</p>
+                            <br>
+                            <p>Fdo.: [TU NOMBRE COMPLETO]</p>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Fuentes y Recursos -->
+        <section id="fuentes" class="py-16 sm:py-20 bg-gray-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl mx-auto">
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h2 class="text-2xl font-bold text-brand-dark mb-4">Fuentes Legales y Recursos Oficiales</h2>
+                        <div class="mt-4 text-gray-700 space-y-6">
+                            <div>
+                                <h4 class="font-semibold text-brand-primary">Usura y Jurisprudencia Clave</h4>
+                                <ul class="list-disc list-inside mt-2 space-y-1">
+                                    <li><a href="https://www.boe.es/buscar/act.php?id=BOE-A-1908-5579" target="_blank" rel="noopener noreferrer" class="text-brand-secondary hover:underline">Ley de Represión de la Usura (1908)</a></li>
+                                    <li>Sentencia del Tribunal Supremo 149/2020, de 4 de marzo.</li>
+                                    <li>Sentencia del Tribunal Supremo 258/2023, de 15 de febrero (fija el criterio de los 6 puntos).</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-brand-primary">Transparencia y Consumidores</h4>
+                                <ul class="list-disc list-inside mt-2 space-y-1">
+                                    <li><a href="https://www.boe.es/buscar/act.php?id=BOE-A-2011-17493" target="_blank" rel="noopener noreferrer" class="text-brand-secondary hover:underline">Orden EHA/2899/2011 (Transparencia)</a></li>
+                                    <li><a href="https://www.boe.es/buscar/act.php?id=BOE-A-2020-8439" target="_blank" rel="noopener noreferrer" class="text-brand-secondary hover:underline">Orden ETD/699/2020 (Crédito Revolving)</a></li>
+                                    <li><a href="https://www.boe.es/buscar/act.php?id=BOE-A-2007-20555" target="_blank" rel="noopener noreferrer" class="text-brand-secondary hover:underline">Ley General para la Defensa de los Consumidores y Usuarios</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-brand-primary">Organismos Oficiales</h4>
+                                <ul class="list-disc list-inside mt-2 space-y-1">
+                                    <li><a href="https://clientebancario.bde.es/pcb/es/menu-horizontal/podemos-ayudarte/reclamaciones-consultas/" target="_blank" rel="noopener noreferrer" class="text-brand-secondary hover:underline">Servicio de Reclamaciones del Banco de España</a></li>
+                                    <li><a href="https://www.poderjudicial.es/" target="_blank" rel="noopener noreferrer" class="text-brand-secondary hover:underline">Poder Judicial de España (para consulta de sentencias)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark text-white">
+        <div class="container mx-auto py-8 px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex flex-col items-center space-y-4">
+                <a href="https://apwebai.es/" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/images/logos/logo-apwebai-bn.png" alt="Logo de apwebai en blanco y negro" class="h-24 w-auto" onerror="this.onerror=null; this.src='https://placehold.co/360x100/FFFFFF/001219?text=apwebai';">
+                </a>
+                <p>&copy; 2025 apwebai. Todos los derechos reservados.</p>
+                <p class="text-sm text-gray-400 mt-2 max-w-2xl">Este sitio web tiene un propósito informativo y no constituye asesoramiento jurídico. Cada caso debe ser analizado individualmente por un profesional.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot Floating Button -->
+    <div id="chatbot-fab" class="fixed bottom-6 right-6 z-50">
+        <button class="bg-brand-primary text-white w-16 h-16 rounded-full shadow-lg flex items-center justify-center hover:bg-brand-secondary transition-transform transform hover:scale-110">
+            <i data-lucide="message-circle" class="w-8 h-8"></i>
+        </button>
+    </div>
+
+    <!-- Chatbot Window -->
+    <div id="chatbot-window" class="hidden fixed bottom-24 right-6 w-full max-w-sm h-[70vh] max-h-[600px] bg-white rounded-xl shadow-2xl z-50 flex flex-col overflow-hidden border border-gray-200">
+        <!-- Chat Header -->
+        <div class="flex-shrink-0 bg-brand-primary text-white p-4 flex justify-between items-center">
+            <div>
+                <h3 class="font-bold text-lg">Asistente IA</h3>
+                <p class="text-sm opacity-80">Respondiendo dudas sobre revolving</p>
+            </div>
+            <button id="close-chatbot" class="p-1 rounded-full hover:bg-white/20">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+        </div>
+        
+        <!-- Messages Area -->
+        <div id="chat-messages" class="flex-grow p-4 overflow-y-auto custom-scrollbar">
+            <!-- Initial AI message -->
+            <div class="flex mb-4">
+                <div class="bg-gray-200 text-brand-dark p-3 rounded-lg max-w-xs">
+                    <p>¡Hola! Soy un asistente IA entrenado con la información de esta web. ¿En qué puedo ayudarte sobre las tarjetas revolving? <br><br><small>Recuerda, esto no es asesoramiento legal.</small></p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Input Area -->
+        <div class="flex-shrink-0 p-4 bg-gray-100 border-t">
+            <div class="flex space-x-2">
+                <input type="text" id="chat-input" placeholder="Escribe tu pregunta aquí..." class="w-full px-4 py-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-brand-secondary">
+                <button id="chat-send" class="bg-brand-primary text-white px-4 py-2 rounded-full hover:bg-brand-secondary flex items-center justify-center">
+                    <i data-lucide="send" class="w-5 h-5"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        /* 📚 SOURCE: This logic is based on the "Key Learnings - A Project Debugging Guide.md" and "Implementation Guide for Other Features.md" to ensure robust, non-blocking UI interactions. */
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- Mobile Menu ---
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // --- Smooth Scrolling & Close Mobile Menu on Nav ---
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                });
+            });
+            
+            // --- Active Nav Link on Scroll ---
+            const sections = document.querySelectorAll('main section');
+            const observer = new IntersectionObserver((entries) => {
+                let visibleSectionId = null;
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        visibleSectionId = entry.target.id;
+                    }
+                });
+
+                if (visibleSectionId) {
+                     navLinks.forEach(link => {
+                        link.classList.toggle('active', link.getAttribute('href').substring(1) === visibleSectionId);
+                    });
+                }
+            }, { rootMargin: "-30% 0px -60% 0px", threshold: 0.1 });
+
+            sections.forEach(section => observer.observe(section));
+
+
+            // --- Chatbot UI Interaction ---
+            const chatbotFab = document.getElementById('chatbot-fab');
+            const chatbotWindow = document.getElementById('chatbot-window');
+            const closeChatbotButton = document.getElementById('close-chatbot');
+
+            chatbotFab.addEventListener('click', () => {
+                chatbotWindow.classList.remove('hidden');
+                chatbotWindow.classList.add('chat-window-visible');
+                chatbotFab.classList.add('hidden');
+            });
+
+            closeChatbotButton.addEventListener('click', () => {
+                chatbotWindow.classList.add('hidden');
+                chatbotWindow.classList.remove('chat-window-visible');
+                chatbotFab.classList.remove('hidden');
+            });
+
+            // --- Lucide Icons ---
+            lucide.createIcons();
+        });
+
+        /* 📚 SOURCE: Chatbot logic based on "The Ultimate Guide to Vanilla HTML5 with 100% Client-Side AI Technologies.md" (Serverless Proxy Pattern) and "EU AI Act Compliance Framework.md" (Art. 50 Disclosure). */
+        // --- Chatbot Logic ---
+        const chatMessages = document.getElementById('chat-messages');
+        const chatInput = document.getElementById('chat-input');
+        const chatSendButton = document.getElementById('chat-send');
+        let isLoading = false;
+
+        const addMessage = (message, sender) => {
+            const messageWrapper = document.createElement('div');
+            messageWrapper.className = `flex mb-4 ${sender === 'user' ? 'justify-end' : ''}`;
+            
+            const messageBubble = document.createElement('div');
+            messageBubble.className = `p-3 rounded-lg max-w-xs ${sender === 'user' ? 'bg-brand-primary text-white' : 'bg-gray-200 text-brand-dark'}`;
+            messageBubble.innerHTML = message; // Using innerHTML to render potential markdown from AI
+
+            messageWrapper.appendChild(messageBubble);
+            chatMessages.appendChild(messageWrapper);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        };
+        
+        const setLoading = (state) => {
+            isLoading = state;
+            chatSendButton.disabled = state;
+            if (state) {
+                const loadingBubble = document.createElement('div');
+                loadingBubble.id = 'loading-bubble';
+                loadingBubble.className = 'flex mb-4';
+                loadingBubble.innerHTML = `<div class="bg-gray-200 text-brand-dark p-3 rounded-lg max-w-xs"><div class="flex space-x-1 animate-pulse"><div class="w-2 h-2 bg-gray-500 rounded-full"></div><div class="w-2 h-2 bg-gray-500 rounded-full"></div><div class="w-2 h-2 bg-gray-500 rounded-full"></div></div></div>`;
+                chatMessages.appendChild(loadingBubble);
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            } else {
+                const loadingBubble = document.getElementById('loading-bubble');
+                if (loadingBubble) {
+                    loadingBubble.remove();
+                }
+            }
+        };
+
+        const handleSendMessage = async () => {
+            const userMessage = chatInput.value.trim();
+            if (!userMessage || isLoading) return;
+
+            addMessage(userMessage, 'user');
+            chatInput.value = '';
+            setLoading(true);
+
+            // 📚 SOURCE: This context is a condensed version of the provided PDFs, acting as a prompt-based RAG system.
+            const context = `
+                Eres un asistente experto en la cancelación de deudas de tarjetas revolving en España. Tu base de conocimiento es la siguiente:
+                - PROBLEMA: Las tarjetas revolving generan una "deuda infinita" porque las cuotas bajas cubren principalmente intereses, no capital. Los intereses no pagados se capitalizan.
+                - VÍA 1 (USURA): Basada en la Ley de 1908. El Tribunal Supremo (STS 258/2023) establece que hay usura si la TAE del contrato supera en 6 puntos porcentuales el tipo de interés medio para tarjetas de crédito/revolving en la fecha de contratación. La consecuencia es la nulidad del contrato: el cliente solo devuelve el capital prestado y la entidad restituye todos los intereses, comisiones y seguros.
+                - VÍA 2 (FALTA DE TRANSPARENCIA): Basada en la ley de consumidores. El contrato puede ser nulo si la entidad no informó de forma clara y comprensible sobre los riesgos, el funcionamiento del crédito rotativo, o si la letra del contrato era ilegible. No se proporcionaron simulaciones de la evolución de la deuda. La consecuencia es la nulidad de la cláusula de intereses o del contrato completo.
+                - PROCESO: 1) Recopilar documentación (contrato, extractos). 2) Reclamación extrajudicial fehaciente (burofax) al SAC de la entidad. Es un paso obligatorio. 3) Si no hay acuerdo, presentar demanda judicial con abogado y procurador. 4) Sentencia y liquidación.
+                - RIESGOS: El principal es la condena en costas si se pierde, pero está limitada por ley a 1/3 de la cuantía del pleito. Es ilegal que te incluyan en ASNEF por una deuda en litigio. La vivienda habitual no corre peligro en este tipo de procedimiento. Se puede solicitar Justicia Gratuita, lo que elimina el riesgo económico.
+                - PLAZOS: La acción de nulidad por usura es imprescriptible. La acción para reclamar la devolución del dinero prescribe a los 5 años desde que se hizo cada pago, aunque se interrumpe con la reclamación extrajudicial.
+                - NO ERES UN ABOGADO: Siempre debes aclarar que tu información es orientativa y no sustituye el asesoramiento legal profesional.
+            `;
+
+            const prompt = `${context}\n\nResponde a la siguiente pregunta del usuario de forma clara, concisa y útil, basándote únicamente en el contexto proporcionado:\n\nPREGUNTA: "${userMessage}"`;
+
+            try {
+                /* 📚 SOURCE: This uses the Serverless Proxy Pattern for secure API key management, as defined in our guides. */
+                // The endpoint '/.netlify/functions/gemini-proxy' must be created on Netlify.
+                const response = await fetch('/.netlify/functions/gemini-proxy', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ prompt: prompt })
+                });
+
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    throw new Error(errorData.error || 'Error en la comunicación con el asistente.');
+                }
+
+                const data = await response.json();
+                const aiMessage = data.text.replace(/\n/g, '<br>'); // Simple markdown for line breaks
+                addMessage(aiMessage, 'ai');
+
+            } catch (error) {
+                console.error('Error en la llamada al Asistente IA:', error);
+                addMessage('Lo siento, he tenido un problema para procesar tu solicitud. Por favor, inténtalo de nuevo más tarde.', 'ai');
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        chatSendButton.addEventListener('click', handleSendMessage);
+        chatInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                handleSendMessage();
+            }
+        });
+    </script>
+</body>
+</html>
