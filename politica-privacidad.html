@@ -13,6 +13,7 @@
     <style>
         body { font-family: 'Inter', sans-serif; }
         .legal-content h2 { font-size: 1.5rem; font-weight: 700; margin-top: 2rem; margin-bottom: 1rem; }
+        .legal-content h3 { font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.75rem; }
         .legal-content p { margin-bottom: 1rem; line-height: 1.6; }
         .legal-content ul { list-style-type: disc; margin-left: 1.5rem; margin-bottom: 1rem; }
     </style>
@@ -25,7 +26,6 @@
                             primary: '#005f73',
                             secondary: '#0a9396',
                             dark: '#001219',
-                            light: '#e9d8a6',
                         }
                     }
                 }
@@ -46,7 +46,31 @@
     </header>
 
     <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <!-- ... (contenido de la política de privacidad sin cambios) ... -->
+        <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">
+            <h1 class="text-4xl font-extrabold text-brand-dark mb-6">Política de Privacidad</h1>
+            <div class="legal-content text-gray-700">
+                <p>La presente Política de Privacidad establece los términos en que apwebai usa y protege la información que es proporcionada por sus usuarios al momento de utilizar su sitio web. Esta compañía está comprometida con la seguridad de los datos de sus usuarios. Cuando le pedimos llenar los campos de información personal con la cual usted pueda ser identificado, lo hacemos asegurando que sólo se empleará de acuerdo con los términos de este documento.</p>
+
+                <h2>Información que es recogida</h2>
+                <p>Nuestro sitio web no recoge información personal de los usuarios, ya que no dispone de formularios de contacto, registro de usuarios ni sistemas de comentarios que requieran la introducción de datos como nombre, información de contacto como su dirección de correo electrónico e información demográfica.</p>
+
+                <h2>Uso del Asistente de IA (Chatbot)</h2>
+                <p>Este sitio web ofrece un Asistente de IA (chatbot) para resolver dudas de los usuarios. El funcionamiento de este servicio implica el tratamiento de la información que usted introduce, con las siguientes particularidades:</p>
+                <ul>
+                    <li><strong>Datos enviados:</strong> Al utilizar el chatbot, el texto de su consulta es enviado a los servidores de Google para ser procesado por su modelo de lenguaje de IA (Gemini).</li>
+                    <li><strong>Finalidad:</strong> El único propósito de enviar su consulta es generar una respuesta relevante y útil basada en el contenido informativo de este sitio web.</li>
+                    <li><strong>Anonimato:</strong> No enviamos ninguna información personal identificable (como nombre, IP o correo electrónico) junto con su consulta. La interacción está diseñada para ser anónima.</li>
+                    <li><strong>No almacenamiento:</strong> Nosotros no almacenamos las conversaciones ni las consultas que usted realiza al chatbot. El tratamiento de los datos por parte de Google se rige por su propia política de privacidad, que puede consultar en sus términos de servicio.</li>
+                </ul>
+                <p>Al utilizar el chatbot, usted consiente el envío de su consulta a los servidores de Google para su procesamiento bajo estas condiciones.</p>
+
+                <h2>Enlaces a Terceros</h2>
+                <p>Este sitio web pudiera contener enlaces a otros sitios que pudieran ser de su interés. Una vez que usted de clic en estos enlaces y abandone nuestra página, ya no tenemos control sobre al sitio al que es redirigido y por lo tanto no somos responsables de los términos o privacidad ni de la protección de sus datos en esos otros sitios terceros. Dichos sitios están sujetos a sus propias políticas de privacidad por lo cual es recomendable que los consulte para confirmar que usted está de acuerdo con estas.</p>
+                
+                <h2>Control de su información personal</h2>
+                <p>Este sitio no recoge información personal, por lo que no hay datos que ceder, vender o distribuir. apwebai se reserva el derecho de cambiar los términos de la presente Política de Privacidad en cualquier momento.</p>
+            </div>
+        </div>
     </main>
 
     <footer class="bg-brand-dark text-white mt-12">
@@ -56,34 +80,5 @@
             </a>
         </div>
     </footer>
-
-    <!-- Cookie Consent Banner -->
-    <div id="cookie-consent-banner" class="hidden fixed bottom-0 left-0 right-0 bg-brand-dark/90 backdrop-blur-sm p-4 z-50">
-        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
-            <p class="text-gray-200">
-                <span>Este sitio web utiliza cookies técnicas esenciales para asegurar que obtengas la mejor experiencia. Para más información, consulta nuestra</span>
-                <a href="politica-cookies.html" class="underline font-bold hover:text-white">Política de Cookies</a>.
-            </p>
-            <button id="cookie-consent-accept" class="bg-brand-light text-brand-dark font-bold py-2 px-6 rounded-lg whitespace-nowrap hover:bg-white transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-light">
-                Entendido
-            </button>
-        </div>
-    </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const banner = document.getElementById('cookie-consent-banner');
-            const acceptButton = document.getElementById('cookie-consent-accept');
-
-            if (!localStorage.getItem('cookie_consent_accepted')) {
-                banner.classList.remove('hidden');
-            }
-
-            acceptButton.addEventListener('click', () => {
-                localStorage.setItem('cookie_consent_accepted', 'true');
-                banner.classList.add('hidden');
-            });
-        });
-    </script>
 </body>
 </html>
