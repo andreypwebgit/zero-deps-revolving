@@ -1,0 +1,8 @@
+{
+  "name": "revolving-netlify-functions",
+  "version": "1.0.0",
+  "description": "Dependencies for Netlify serverless functions",
+  "dependencies": {
+    "node-fetch": "^2.0.0"
+  }
+}
