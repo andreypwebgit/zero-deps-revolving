@@ -103,7 +103,7 @@
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <div class="flex items-center">
-                    <a href="#" class="flex-shrink-0">
+                    <a href="/" class="flex-shrink-0">
                         <img src="./assets/images/logos/logo-apwebai-transparente.png" alt="Logo de apwebai" class="h-20 w-auto" onerror="this.onerror=null; this.src='https://placehold.co/300x80/001219/FFFFFF?text=apwebai';">
                     </a>
                 </div>
@@ -292,7 +292,7 @@
                         <div class="relative flex items-start md:space-x-6">
                             <div class="flex-shrink-0 w-12 h-12 rounded-full bg-brand-primary text-white flex items-center justify-center z-10 font-bold text-lg">1</div>
                             <div class="bg-gray-50 p-6 rounded-lg shadow-md flex-1 ml-4 md:ml-0">
-                                <h3 class="text-xl font-bold">Recopilar Documentación</h3>
+                                <h3 class="text-xl font-bold"><a href="https://clientebancario.bde.es/pcb/es/menu-horizontal/podemosayudarte/criterios/Tarjetas_revolving.html" target="_blank" rel="noopener noreferrer" class="text-brand-primary hover:underline">Recopilar Documentación</a></h3>
                                 <p class="mt-2 text-gray-600">Reúne el contrato, todos los extractos mensuales y cualquier comunicación con la entidad. Si no los tienes, la entidad está obligada a dártelos.</p>
                             </div>
                         </div>
@@ -459,7 +459,7 @@
                             <div>
                                 <h4 class="font-semibold text-brand-primary">Organismos Oficiales</h4>
                                 <ul class="list-disc list-inside mt-2 space-y-1">
-                                    <li><a href="https://clientebancario.bde.es/pcb/es/menu-horizontal/podemos-ayudarte/reclamaciones-consultas/" target="_blank" rel="noopener noreferrer" class="text-brand-secondary hover:underline">Servicio de Reclamaciones del Banco de España</a></li>
+                                    <li><a href="https://app.bde.es/psr_www/psr_wwwias/xml/Arranque.html" target="_blank" rel="noopener noreferrer" class="text-brand-secondary hover:underline">Servicio de Reclamaciones del Banco de España</a></li>
                                     <li><a href="https://www.poderjudicial.es/" target="_blank" rel="noopener noreferrer" class="text-brand-secondary hover:underline">Poder Judicial de España (para consulta de sentencias)</a></li>
                                 </ul>
                             </div>
@@ -477,11 +477,29 @@
                 <a href="https://apwebai.es/" target="_blank" rel="noopener noreferrer">
                     <img src="./assets/images/logos/logo-apwebai-bn.png" alt="Logo de apwebai en blanco y negro" class="h-24 w-auto" onerror="this.onerror=null; this.src='https://placehold.co/360x100/FFFFFF/001219?text=apwebai';">
                 </a>
-                <p>&copy; 2025 apwebai. Todos los derechos reservados.</p>
+                <div class="flex space-x-4 text-sm text-gray-400">
+                    <a href="aviso-legal.html" class="hover:text-white">Aviso Legal</a>
+                    <a href="politica-privacidad.html" class="hover:text-white">Política de Privacidad</a>
+                    <a href="politica-cookies.html" class="hover:text-white">Política de Cookies</a>
+                </div>
+                <p class="pt-2">&copy; 2025 apwebai. Todos los derechos reservados.</p>
                 <p class="text-sm text-gray-400 mt-2 max-w-2xl">Este sitio web tiene un propósito informativo y no constituye asesoramiento jurídico. Cada caso debe ser analizado individualmente por un profesional.</p>
             </div>
         </div>
     </footer>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-consent-banner" class="hidden fixed bottom-0 left-0 right-0 bg-brand-dark/90 backdrop-blur-sm p-4 z-50">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
+            <p class="text-gray-200">
+                <span>Este sitio web utiliza cookies técnicas esenciales para asegurar que obtengas la mejor experiencia. Para más información, consulta nuestra</span>
+                <a href="politica-cookies.html" class="underline font-bold hover:text-white">Política de Cookies</a>.
+            </p>
+            <button id="cookie-consent-accept" class="bg-brand-light text-brand-dark font-bold py-2 px-6 rounded-lg whitespace-nowrap hover:bg-white transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-light">
+                Entendido
+            </button>
+        </div>
+    </div>
 
     <!-- Chatbot Floating Button -->
     <div id="chatbot-fab" class="fixed bottom-6 right-6 z-50">
@@ -491,7 +509,7 @@
     </div>
 
     <!-- Chatbot Window -->
-    <div id="chatbot-window" class="hidden fixed bottom-24 right-6 w-full max-w-sm h-[70vh] max-h-[600px] bg-white rounded-xl shadow-2xl z-50 flex flex-col overflow-hidden border border-gray-200">
+    <div id="chatbot-window" class="hidden fixed bottom-24 right-6 w-full max-w-sm md:max-w-lg h-[70vh] md:h-[80vh] max-h-[700px] bg-white rounded-xl shadow-2xl z-50 flex flex-col overflow-hidden border border-gray-200">
         <!-- Chat Header -->
         <div class="flex-shrink-0 bg-brand-primary text-white p-4 flex justify-between items-center">
             <div>
@@ -540,6 +558,19 @@
 
         /* 📚 SOURCE: This logic is based on the "Key Learnings - A Project Debugging Guide.md" and "Implementation Guide for Other Features.md" to ensure robust, non-blocking UI interactions. */
         document.addEventListener('DOMContentLoaded', () => {
+            // --- Cookie Consent Banner Logic ---
+            const banner = document.getElementById('cookie-consent-banner');
+            const acceptButton = document.getElementById('cookie-consent-accept');
+            if (banner && acceptButton) {
+                if (!localStorage.getItem('cookie_consent_accepted')) {
+                    banner.classList.remove('hidden');
+                }
+                acceptButton.addEventListener('click', () => {
+                    localStorage.setItem('cookie_consent_accepted', 'true');
+                    banner.classList.add('hidden');
+                });
+            }
+
             // --- Mobile Menu ---
             const mobileMenuButton = document.getElementById('mobile-menu-button');
             const mobileMenu = document.getElementById('mobile-menu');
@@ -609,13 +640,48 @@
         const chatSendButton = document.getElementById('chat-send');
         let isLoading = false;
 
+        const formatAIResponse = (text) => {
+            // Convert **bold** to <strong>bold</strong>
+            let formattedText = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+            
+            // Convert * item to <li> item
+            const lines = formattedText.split('\n');
+            let inList = false;
+            formattedText = lines.map(line => {
+                if (line.trim().startsWith('* ')) {
+                    if (!inList) {
+                        inList = true;
+                        return '<ul><li class="ml-4 list-disc">' + line.trim().substring(2) + '</li>';
+                    }
+                    return '<li class="ml-4 list-disc">' + line.trim().substring(2) + '</li>';
+                } else {
+                    if (inList) {
+                        inList = false;
+                        return '</ul>' + line;
+                    }
+                    return line;
+                }
+            }).join('<br>');
+
+            if (inList) {
+                formattedText += '</ul>';
+            }
+
+            return formattedText.replace(/<br>/g, '\n').replace(/\n/g, '<br>');
+        };
+
         const addMessage = (message, sender) => {
             const messageWrapper = document.createElement('div');
             messageWrapper.className = `flex mb-4 ${sender === 'user' ? 'justify-end' : ''}`;
             
             const messageBubble = document.createElement('div');
             messageBubble.className = `p-3 rounded-lg max-w-xs ${sender === 'user' ? 'bg-brand-primary text-white' : 'bg-gray-200 text-brand-dark'}`;
-            messageBubble.innerHTML = message; // Using innerHTML to render potential markdown from AI
+            
+            if (sender === 'ai') {
+                messageBubble.innerHTML = formatAIResponse(message);
+            } else {
+                messageBubble.textContent = message;
+            }
 
             messageWrapper.appendChild(messageBubble);
             chatMessages.appendChild(messageWrapper);
@@ -648,7 +714,6 @@
             chatInput.value = '';
             setLoading(true);
 
-            // 📚 SOURCE: This context is a condensed version of the provided PDFs, acting as a prompt-based RAG system.
             const context = `
                 Eres un asistente experto en la cancelación de deudas de tarjetas revolving en España. Tu base de conocimiento es la siguiente:
                 - PROBLEMA: Las tarjetas revolving generan una "deuda infinita" porque las cuotas bajas cubren principalmente intereses, no capital. Los intereses no pagados se capitalizan.
@@ -663,8 +728,6 @@
             const prompt = `${context}\n\nResponde a la siguiente pregunta del usuario de forma clara, concisa y útil, basándote únicamente en el contexto proporcionado:\n\nPREGUNTA: "${userMessage}"`;
 
             try {
-                /* 📚 SOURCE: This uses the Serverless Proxy Pattern for secure API key management, as defined in our guides. */
-                // The endpoint '/.netlify/functions/gemini-proxy' must be created on Netlify.
                 const response = await fetch('/.netlify/functions/gemini-proxy', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
@@ -677,8 +740,7 @@
                 }
 
                 const data = await response.json();
-                const aiMessage = data.text.replace(/\n/g, '<br>'); // Simple markdown for line breaks
-                addMessage(aiMessage, 'ai');
+                addMessage(data.text, 'ai');
 
             } catch (error) {
                 console.error('Error en la llamada al Asistente IA:', error);
