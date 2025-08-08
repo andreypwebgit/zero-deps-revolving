@@ -11,6 +11,10 @@
     <meta name="author" content="apwebai">
     <link rel="canonical" href="https://tu-dominio.es/">
 
+    <!-- PWA Manifest Link -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#005f73">
+
     <!-- Favicons -->
     <link rel="icon" type="image/png" href="./assets/images/logos/logo-apwebai-transparente.png">
     <link rel="apple-touch-icon" href="./assets/images/logos/logo-apwebai-transparente.png">
@@ -521,6 +525,19 @@
     </div>
 
     <script>
+        // Service Worker Registration
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then(registration => {
+                        console.log('ServiceWorker registrado con éxito: ', registration.scope);
+                    })
+                    .catch(error => {
+                        console.log('Fallo en el registro de ServiceWorker: ', error);
+                    });
+            });
+        }
+
         /* 📚 SOURCE: This logic is based on the "Key Learnings - A Project Debugging Guide.md" and "Implementation Guide for Other Features.md" to ensure robust, non-blocking UI interactions. */
         document.addEventListener('DOMContentLoaded', () => {
             // --- Mobile Menu ---

@@ -1,0 +1,21 @@
+{
+  "name": "Guía Definitiva Revolving España",
+  "short_name": "Revolving SOS",
+  "description": "Guía completa para cancelar deudas de tarjetas revolving en España.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#001219",
+  "theme_color": "#005f73",
+  "icons": [
+    {
+      "src": "/assets/images/logos/logo-apwebai-transparente.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/logos/logo-apwebai-transparente.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
